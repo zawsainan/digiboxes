@@ -51,7 +51,9 @@ html{
   padding-left: 20px !important;
 }
 
-
+.vision-mission{
+  width: 100px;
+}
 
 .counter {
   transition: all 0.3s ease-out;
