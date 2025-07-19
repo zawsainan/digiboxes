@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --primary-color: #ebc43d;
+  --dark-color: #161616;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+  overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+  /* Utility Classes */
+  .bg-primary{
+    background-color: var(--primary-color) !important;
+    
+  }
+.fw-boldest{
+    font-weight: 800;
+}
+.h-max-content{
+    height: max-content !important;
+}
+.w-130{
+  width: 130px !important;
+}
+.text-xs{
+  font-size: 11px !important;
+}
+.text-sm{
+  font-size: 13px !important;
+}
+
+
+/* Regular Classes */
+.motion{
+  height: 100vh;
+}
+
+.navbar-collapse.show{
+  transition: all 0 ease;
+  background-color: var(--primary-color) !important;
+}
+.navbar-collapse.show .navlink{
+  padding-left: 20px !important;
+}
+
+
+
+.counter {
+  transition: all 0.3s ease-out;
+}
+
+.even-card {
+  animation: float-up-down 4s ease infinite;
+}
+
+.odd-card {
+  animation: float-down-up 4s ease infinite;
+}
+
+footer{
+  background-color: rgba(0,0,0,0.2);
+  padding: 0;
+}
+.footer-image{
+  width: 200px;
+  height: 100%;
+  margin-top: -20px;
+}
+
+/* Animation */
+@keyframes float-up-down {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes float-down-up {
+  0%, 100% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navigation{
+    position: relative !important;
+  }
+  .motion{
+  height: auto;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+  .footer-image{
+    width: 120px;
+    height: 100%;
+  }
+  .footer-text{
+    font-size: 12px !important;
+  }
+}
