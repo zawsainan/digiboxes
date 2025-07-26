@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="mt-4">
         <div class="container d-flex justify-content-center">
             <div class="me-2 h-100">
                 <img class="footer-image" src="assets/images/footer.png" alt="" />

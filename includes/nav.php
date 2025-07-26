@@ -27,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link ps-4 fs-6 fw-semibold active" href="about.html">ABOUT</a>
+                        <a class="nav-link ps-4 fs-6 fw-semibold " href="">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-4 fs-6 fw-semibold" href="/services.php">SERVICES</a>
+                        <a class="nav-link ps-4 fs-6 fw-semibold <?= $_SERVER['REQUEST_URI'] == '/services.php' ? 'active' : '' ?>" href="/services.php">SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ps-4 fs-6 fw-semibold" href="#">CLIENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-4 fs-6 fw-semibold" href="#">PORTFOLIO</a>
+                        <a class="nav-link ps-4 fs-6 fw-semibold <?= $_SERVER['REQUEST_URI'] == '/portfolio.php' ? 'active' : '' ?>" href="/portfolio.php">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ps-4 fs-6 fw-semibold" href="#">TEAM</a>

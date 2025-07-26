@@ -20,9 +20,18 @@ body{
 }
   
   /* Utility Classes */
+
+  .text-primary{
+    color: var(--primary-color) !important;
+  }
+
   .bg-primary{
     background-color: var(--primary-color) !important;
     
+  }
+
+  .bg-dark{
+    background-color: var(--dark-color) !important;
   }
 .fw-boldest{
     font-weight: 800;
@@ -37,7 +46,25 @@ body{
   font-size: 11px !important;
 }
 .text-sm{
-  font-size: 13px !important;
+  font-size: 14px !important;
+}
+/* Nav bar styles */
+
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translateX(-50%);
+  box-shadow: -10px 0 0 rgba(22, 22, 22, 0.5), 10px 0 0 rgba(22, 22, 22, 0.5);
 }
 
 
@@ -100,6 +127,44 @@ footer{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* EOL -2 Section */
+
+.notebook,.shirt,.pen{
+  position: relative;
+  }
+.notebook img{
+  position: absolute;
+  top: -23px;
+  height: 110%;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shirt img{
+  position: absolute;
+  left: 0;
+  top: -26px;
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;
+
+}
+
+.pen img{
+  position: absolute;
+  top: 0;
+  left: -37px;
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: inset(0 20px 0 0);
+  z-index: 2;
 }
 
 /* Animation */
