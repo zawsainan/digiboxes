@@ -1,0 +1,31 @@
+.photoshoot-first-grid-container{ display: grid; grid-template-columns:
+repeat(4,auto); grid-template-rows: repeat(2, 220px); gap: 10px; }
+.row-col-span-2{ grid-row: span 2; grid-column: span 2; }
+<!-- first grid  -->
+<div class="photoshoot-first-grid-container mb-2">
+  <div class="row-col-span-2">
+    <img
+      src="assets/images/photoshoot/1.png"
+      class="w-100 h-100 object-fit-cover"
+    />
+  </div>
+
+  <div class="">
+    <img
+      src="assets/images/photoshoot/2.png"
+      class="w-100 h-100 object-fit-cover"
+    />
+  </div>
+  <div class="row-span-2">
+    <img
+      src="assets/images/photoshoot/3.png"
+      class="w-100 h-100 object-fit-cover"
+    />
+  </div>
+  <div>
+    <img
+      src="assets/images/photoshoot/4.png"
+      class="w-100 h-100 object-fit-cover"
+    />
+  </div>
+</div>

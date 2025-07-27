@@ -6,7 +6,7 @@ include_once('includes/header.php');
     include_once('includes/nav.php');
     ?>
 </div>
-<main x-data="{tab :'mascot' }">
+<main x-data="{tab :'photoshoot' }">
     <!-- header section start -->
     <div class="container-fluid py-3 bg-dark text-center text-primary">
         <p class="mb-0">Original Ideas. Bold execution</p>
@@ -26,7 +26,7 @@ include_once('includes/header.php');
     </div>
 
     <!-- Sub Menu Bar Section Start -->
-    <div class="container">
+    <div class="container py-3 py-lg-4">
         <div class="d-flex flex-wrap justify-content-evenly my-3">
             <button class="nav-link bg-transparent border-0 text-sm d-inline-block p-1" type="button">Social Designs</button>
             <button @click="tab = 'photoshoot'" :class="{'active': tab === 'photoshoot'}" class="nav-link bg-transparent border-0 text-sm d-inline-block p-1" type="button">Photoshoot</button>
@@ -40,7 +40,7 @@ include_once('includes/header.php');
         </div>
     </div>
     <!-- KOL Section Start  -->
-    <div x-show="tab == 'kol'" class="m-0 p-0" id="kol">
+    <div x-show="tab == 'kol'" class="mt-3 pt-4" id="kol">
         <div class="container">
             <div class="row gx-2 mb-2">
                 <div class="col-12 col-md-6 mb-2 mb-md-0 overflow-hidden rounded-4">
@@ -77,8 +77,8 @@ include_once('includes/header.php');
                 </div>
             </div>
             <div class="row gx-2">
-                <div class="col-8">
-                    <img class="w-100 h-100 object-fit-cover rounded-4" src="assets/images/eol/9.jpg" alt="">
+                <div class="col-8 bg-success top">
+                    <img src="assets/images/eol/9.jpg" alt="">
                 </div>
                 <div class="col-4">
                     <div class="row gy-2">
@@ -86,7 +86,7 @@ include_once('includes/header.php');
                             <img class="w-100 h-100 object-fit-cover rounded-4" src="assets/images/eol/10.png" alt="">
                         </div>
                         <div class="col-12 overflow-hidden rounded-4">
-                            <img class="h-100 object-fit-cover rounded-4" src="assets/images/eol/11.png" alt="">
+                            <img class="w-100 object-fit-cover rounded-4" src="assets/images/eol/11.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,8 @@ include_once('includes/header.php');
         </div>
     </div>
     <!-- KOL 2 Section Start  -->
-    <div x-show="tab == 'kol'" class="m-0 p-0" id="eol-2">
-        <div class="container py-3">
+    <div x-show="tab == 'kol'" class="mt-3 pt-4" id="eol-2">
+        <div class="container">
             <div class="row gx-2 mb-2">
                 <div class="col-6 col-md-3">
                     <img src="/assets/images/eol2/1.png" alt="" class="w-100 h-100 object-fit cover">
@@ -111,7 +111,7 @@ include_once('includes/header.php');
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="w-100 h-100 pen rounded-4">
+                    <div class="w-100 h-100 pen">
                         <img src="/assets/images/eol2/4.png" alt="">
                     </div>
                 </div>
@@ -160,28 +160,27 @@ include_once('includes/header.php');
 
     </div>
     <!-- Mascot Section Start  -->
-    <div x-show="tab == 'mascot'" class="m-0 p-0" id="mascot">
+    <div x-show="tab == 'mascot'" class="mt-3 pt-4" id="mascot">
         <div class="container">
             <div class="row g-2">
                 <div class="col-6 col-md-4">
-                    <img src="assets/images/mascot/1.png" alt="" class=" w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
+                    <img src="assets/images/mascot/1.png" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="assets/images/mascot/2.png" alt="" class=" w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
-
+                    <img src="assets/images/mascot/2.png" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="assets/images/mascot/3.png" alt="" class=" w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
+                    <img src="assets/images/mascot/3.png" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="assets/images/mascot/4.png" alt="" class=" w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
+                    <img src="assets/images/mascot/4.png" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="assets/images/mascot/5.png" alt="" class=" w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
+                    <img src="assets/images/mascot/5.png" class="w-100 h-100 object-fit-cover">
 
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="assets/images/mascot/6.png" alt="" class="w-100 h-100 rounded-4 object-fit-contain" style="object-position: bottom center;">
+                <div class="col-12 col-md-6 rounded-3 overflow-hidden">
+                    <img src="assets/images/mascot/6.png" alt="" class="w-100 h-100 object-fit-cover">
                 </div>
                 <div class="col-1">
                     <img src="assets/images/mascot/arrow.png" alt="" class=" w-100 h-100 rounded-4 object-fit-cover">
@@ -209,49 +208,51 @@ include_once('includes/header.php');
         </div>
     </div>
     <!-- Event Management Section Start -->
-    <div x-show="tab == 'event'" class="m-0 p-0" id="event">
+    <div x-show="tab == 'event'" class="mt-3 pt-4" id="event">
         <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <img src="assets/images/event/E1.png" alt="" class="w-100 h-100 object-fit-cover">
+            <div class="row g-2">
+                <div class="col-8 top">
+                    <img src="assets/images/event/E1.png" alt="">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E2.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E2.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E3.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E3.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E4.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E4.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E5.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E5.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E6.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E6.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E7.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E7.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <img src="assets/images/event/E8.png" alt="" class="w-100 h-100 object-fit-cover">
-                </div>
-                <div class="col-8">
-                    <img src="assets/images/event/E9.png" alt="" class="w-100 h-100 object-fit-cover">
-                </div>
-                <div class="col-4">
-                    <img src="assets/images/event/E11.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E8.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-8">
-                    <img src="assets/images/event/E10.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E9.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                 </div>
                 <div class="col-4">
-                    <div class="d-flex flex-column">
-                        <div>
-                            <img src="assets/images/event/E12.png" alt="" class="w-100 h-100 object-fit-cover">
+                    <img src="assets/images/event/E11.png" alt="" class="w-100 h-100 object-fit-cove rounded-3r">
+                </div>
+            </div>
+            <div class="row g-2 mt-1">
+                <div class="col-8 top">
+                    <img src="assets/images/event/E10.png" alt="">
+                </div>
+                <div class="col-4">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <img src="assets/images/event/E12.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                         </div>
-                        <div>
-                            <img src="assets/images/event/E13.png" alt="" class="w-100 h-100 object-fit-cover">
+                        <div class="col-12">
+                            <img src="assets/images/event/E13.png" alt="" class="w-100 h-100 object-fit-cover rounded-3">
                         </div>
                     </div>
                 </div>
@@ -260,18 +261,17 @@ include_once('includes/header.php');
     </div>
 
     <!-- Photoshoot Section Start  -->
-    <div x-show="tab == 'photoshoot'" class="m-0 p-0" id="photoshoot">
+    <div x-show="tab == 'photoshoot'" class="mt-3 pt-4" id="photoshoot">
         <div class="container">
-            <!-- first row  -->
             <div class="row gx-2 mb-2">
                 <!-- first column  -->
-                <div class="col-12 col-md-6">
-                    <img src="assets/images/photoshoot/1.png" alt="" class="w-100 h-100 object-fit-cover">
+                <div class="col-12 col-md-6 top">
+                    <img src="assets/images/photoshoot/1.png" alt="">
                 </div>
 
                 <!-- second column  -->
                 <div class="col-6 col-md-3">
-                    <div class="d-flex flex-column h-100">
+                    <div class="d-flex flex-row flex-md-column h-100">
                         <div class="w-100 mb-2 h-100">
                             <img src="assets/images/photoshoot/2.png" alt="" class="w-100 h-100 object-fit-cover">
                         </div>
@@ -282,67 +282,47 @@ include_once('includes/header.php');
                 </div>
 
                 <!-- third column  -->
-                <div class="col-6 col-md-3">
-                    <img src="assets/images/photoshoot/3.png" alt="" class="w-100 h-100 object-fit-cover">
+                <div class="col-6 col-md-3 top">
+                    <img src="assets/images/photoshoot/3.png" alt="">
 
                 </div>
             </div>
-            <!-- second row  -->
-            <div class="row gx-2 mb-2">
-                <!-- first column  -->
-                <div class="col-6 col-md-3">
-                    <div class="d-flex flex-column h-100">
-                        <div class="w-100 h-100  rounded-3 overflow-hidden mb-2">
-                            <img src="assets/images/photoshoot/5.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/9.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                    </div>
+            <!-- second grid  -->
+            <div class="photoshoot-second-grid-container mb-2">
+                <div class="row-span-2 right">
+                    <img src="assets/images/photoshoot/5.png">
                 </div>
-                <!-- second column  -->
-                <div class="col-6 col-md-3">
-                    <div class="d-flex flex-column h-100">
-                        <div class="w-100 mb-2 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/6.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/10.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                    </div>
+                <div>
+                    <img src="assets/images/photoshoot/6.png" alt="" class="w-100 h-100 object-fit-cover">
                 </div>
-                <!-- third column  -->
-                <div class="col-6 col-md-3">
-                    <div class="d-flex flex-column h-100">
-                        <div class="w-100 mb-2 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/7.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 mb-2 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/11.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 h-100 rounded-3 overflow-hidden">
-                            <img src="assets/images/photoshoot/13.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                    </div>
+                <div>
+                    <img src="assets/images/photoshoot/7.png" alt="" class="w-100 h-100 object-fit-cover">
                 </div>
-                <!-- fourth column  -->
-                <div class="col-6 col-md-3">
-                    <div class="d-flex flex-column h-100">
-                        <div class="w-100 mb-2 h-100">
-                            <img src="assets/images/photoshoot/8.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 mb-2 h-100">
-                            <img src="assets/images/photoshoot/12.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                        <div class="w-100 h-100">
-                            <img src="assets/images/photoshoot/14.png" alt="" class="w-100 h-100 object-fit-cover">
-                        </div>
-                    </div>
+                <div class="top">
+                    <img src="assets/images/photoshoot/8.png">
+                </div>
+                <div class="row-span-2">
+                    <img src="assets/images/photoshoot/10.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <img src="assets/images/photoshoot/11.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <img src="assets/images/photoshoot/12.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <img src="assets/images/photoshoot/9.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <img src="assets/images/photoshoot/13.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <img src="assets/images/photoshoot/14.png" alt="" class="w-100 h-100 object-fit-cover">
                 </div>
             </div>
             <div class="row gx-2">
-                <div class="col-6">
-                    <img src="assets/images/photoshoot/15.png" class="w-100 h-100 object-fit-cover" alt="">
+                <div class="col-6 top-right">
+                    <img src="assets/images/photoshoot/15.png" alt="">
                 </div>
                 <div class="col-6">
                     <div class="row g-2">
@@ -352,8 +332,8 @@ include_once('includes/header.php');
                         <div class="col-6">
                             <img src="assets/images/photoshoot/17.png" class="w-100 h-100 object-fit-cover" alt="">
                         </div>
-                        <div class="col-12">
-                            <img src="assets/images/photoshoot/18.png" class="w-100 h-100 object-fit-cover" alt="">
+                        <div class="col-12 top" style="height: 215px;">
+                            <img src="assets/images/photoshoot/18.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -361,7 +341,7 @@ include_once('includes/header.php');
         </div>
     </div>
     <!-- Tiktok Section Start  -->
-    <div x-show="tab == 'tiktok'" class="m-0 p-0" id="videoshoot">
+    <div x-show="tab == 'tiktok'" class="mt-3 pt-4" id="videoshoot">
         <div class="container">
             <div class="row g-2">
                 <div class="col-12 col-md-6 col-lg-4">

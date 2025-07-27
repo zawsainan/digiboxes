@@ -66,8 +66,21 @@ body{
   transform: translateX(-50%);
   box-shadow: -10px 0 0 rgba(22, 22, 22, 0.5), 10px 0 0 rgba(22, 22, 22, 0.5);
 }
+/* Event  */
 
+.balloon,.white-balloon{
+  position: relative !important;
 
+}
+
+.balloon img,.white-balloon img{
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
 /* Regular Classes */
 .motion{
   height: 100vh;
@@ -131,42 +144,46 @@ footer{
 
 /* EOL -2 Section */
 
-.notebook,.shirt,.pen{
+.notebook,.shirt,.pen,.top,.right,.top-right{
   position: relative;
   }
-.notebook img{
-  position: absolute;
-  top: -23px;
-  height: 110%;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+.mascot{
+  position: relative;
+  height: 300px;
 }
-
-.shirt img{
+.notebook img,.shirt img,.mascot img,.top img{
   position: absolute;
   left: 0;
-  top: -26px;
-  height: 110%;
+  bottom: 0;
+  height: auto;
   width: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  z-index: 1;
-
 }
 
 .pen img{
   position: absolute;
-  top: 0;
-  left: -37px;
-  width: 120%;
+  right: 0;
+  bottom: 0;
   height: 100%;
+  width: auto;
   object-fit: cover;
-  clip-path: inset(0 20px 0 0);
-  z-index: 2;
 }
-
+.right img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.top-right img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
 /* Animation */
 @keyframes float-up-down {
   0%{
@@ -225,4 +242,13 @@ footer{
   .footer-text{
     font-size: 12px !important;
   }
+}
+.photoshoot-second-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto); 
+  grid-template-rows: repeat(3, 220px);   
+  gap: 10px;
+}
+.row-span-2{
+  grid-row: span 2;
 }
